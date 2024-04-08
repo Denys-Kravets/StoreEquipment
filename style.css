@@ -50,7 +50,6 @@ footer {
 .equipment-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 /* Style the equipment item */
@@ -59,7 +58,7 @@ footer {
     border: 1px solid black;
     border-radius: 12px;
     flex-basis: calc(30% - 20px);
-    margin-bottom: 20px;
+    margin: 20px;
     padding: 15px;
     text-align: center;
 }
@@ -79,4 +78,18 @@ footer {
     .equipment-item {
         flex-basis: calc(100% - 20px);
     }
+}
+#searchInput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 300px;
+}
+
+/* Стилі для мітки "Search" */
+label {
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
 }

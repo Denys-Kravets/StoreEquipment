@@ -19,7 +19,10 @@
 
 <!-- Add the main content area -->
 <main>
-    <h1>Equipment</h1>
+    <h1 style="margin-left: 20px">Equipment</h1>
+    <label for="searchInput"></label>
+    <input type="text" id="searchInput" placeholder="Search items by name..." />
+
     <div class="equipment-container">
         <div class="equipment-item" data-image-src="eq.png">
             <h2>Dumbbells</h2>
@@ -91,25 +94,6 @@
 <footer>
     &copy; 2023 Sports Equipment. All rights reserved.
 </footer>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const equipmentItems = document.querySelectorAll(".equipment-item");
-
-        equipmentItems.forEach(item => {
-            item.addEventListener('click', function() {
-                const imageSrc = item.getAttribute('data-image-src');
-
-                // Access specific elements within the clicked equipment item
-                const itemName = item.querySelector('h2').textContent;
-                const itemDescription = item.querySelector('p:first-of-type').textContent;
-                const itemPrice = item.querySelector('p:nth-of-type(2)').textContent;
-
-                // Redirect to product page with all necessary information
-                window.location.href = `product.html?image=${encodeURIComponent(imageSrc)}&name=${encodeURIComponent(itemName)}&description=${encodeURIComponent(itemDescription)}&price=${encodeURIComponent(itemPrice)}`;
-            });
-        });
-    });
-
-</script>
+<script src="app-equipment.js"></script>
 </body>
 </html>
