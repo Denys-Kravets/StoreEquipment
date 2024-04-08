@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sports Equipment - Equipment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Add the header with the logo -->
+<header>
+    <img src="logo.png" alt="Company logo" />
+</header>
+
+<!-- Add the navigation menu -->
+<nav>
+    <a  class="nav-link" href="index.html">Home</a> |
+    <a  class="nav-link" href="equipment.html">Equipment</a> |
+    <a  class="nav-link" href="about.html">About us</a>
+</nav>
+
+<!-- Add the main content area -->
+<main>
+    <h1>Equipment</h1>
+    <div class="equipment-container">
+        <div class="equipment-item" data-image-src="eq.png">
+            <h2>Dumbbells</h2>
+            <p>Enhance your strength training with these versatile dumbbells. Perfect for various exercises targeting different muscle groups.</p>
+            <p>Price: $1.2</p>
+            <img src="eq.png" alt="Dumbbells" class="equipment-image" />
+        </div>
+
+        <div class="equipment-item" data-image-src="eq-1.png">
+            <h2>Skipping Rope</h2>
+            <p>Boost your cardio and agility with this lightweight skipping rope. Ideal for quick and effective workouts indoors or outdoors.</p>
+            <p>Price: $2.3</p>
+            <img src="eq-1.png" alt="Skipping Rope" class="equipment-image" />
+        </div>
+
+        <div class="equipment-item" data-image-src="eq-2.png">
+            <h2>Weight Plates</h2>
+            <p>Add intensity to your lifts with these durable weight plates. Suitable for barbell and dumbbell exercises to build strength and muscle.</p>
+            <p>Price: $3.4</p>
+            <img src="eq-2.png" alt="Weight Plates" class="equipment-image" />
+        </div>
+
+        <div class="equipment-item" data-image-src="eq-3.png">
+            <h2>Sneakers</h2>
+            <p>Step up your performance with these comfortable and supportive sneakers. Designed for stability and cushioning during workouts.</p>
+            <p>Price: $4.5</p>
+            <img src="eq-3.png" alt="Sneakers" class="equipment-image" />
+        </div>
+
+        <div class="equipment-item" data-image-src="eq-4.png">
+            <h2>Wristbands</h2>
+            <p>Keep sweat away and stay focused with these absorbent wristbands. An essential accessory for intense training sessions.</p>
+            <p>Price: $2.3</p>
+            <img src="eq-4.png" alt="Wristbands" class="equipment-image" />
+        </div>
+
+        <div class="equipment-item" data-image-src="eq-5.png">
+            <h2>Dumbbells</h2>
+            <p>Another set of quality dumbbells to expand your workout routine. Build strength and tone muscles with these reliable tools.</p>
+            <p>Price: $3.4</p>
+            <img src="eq-5.png" alt="Dumbbells" class="equipment-image" />
+        </div>
+
+        <div class="equipment-item" data-image-src="eq-6.png">
+            <h2>Skipping Rope</h2>
+            <p>Get your heart pumping with this durable skipping rope. Ideal for improving coordination and endurance with every jump.</p>
+            <p>Price: $4.5</p>
+            <img src="eq-6.png" alt="Skipping Rope" class="equipment-image" />
+        </div>
+
+        <div class="equipment-item" data-image-src="eq-7.png">
+            <h2>Soccer Ball</h2>
+            <p>Kickstart your soccer skills with this high-quality ball. Perfect for practice sessions and friendly matches.</p>
+            <p>Price: $4.5</p>
+            <img src="eq-7.png" alt="Soccer Ball" class="equipment-image" />
+        </div>
+
+        <div class="equipment-item" data-image-src="eq-8.png">
+            <h2>Basketball</h2>
+            <p>Take your game to the next level with this reliable basketball. Designed for optimal grip and performance on the court.</p>
+            <p>Price: $4.5</p>
+            <img src="eq-8.png" alt="Basketball" class="equipment-image" />
+        </div>
+
+    </div>
+</main>
+
+<!-- Add the footer -->
+<footer>
+    &copy; 2023 Sports Equipment. All rights reserved.
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const equipmentItems = document.querySelectorAll(".equipment-item");
+
+        equipmentItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const imageSrc = item.getAttribute('data-image-src');
+
+                // Access specific elements within the clicked equipment item
+                const itemName = item.querySelector('h2').textContent;
+                const itemDescription = item.querySelector('p:first-of-type').textContent;
+                const itemPrice = item.querySelector('p:nth-of-type(2)').textContent;
+
+                // Redirect to product page with all necessary information
+                window.location.href = `product.html?image=${encodeURIComponent(imageSrc)}&name=${encodeURIComponent(itemName)}&description=${encodeURIComponent(itemDescription)}&price=${encodeURIComponent(itemPrice)}`;
+            });
+        });
+    });
+
+</script>
+</body>
+</html>
