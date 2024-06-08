@@ -12,9 +12,12 @@
 
 <!-- Add the navigation menu -->
 <nav>
-    <a  class="nav-link" href="index.html">Home</a> |
-    <a  class="nav-link" href="equipment.html">Equipment</a> |
-    <a  class="nav-link" href="about.html">About us</a>
+    <button class="burger-menu" onclick="toggleMenu()">&#9776;</button>
+    <div class="nav-links" id="navLinks">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="equipment.html">Equipment</a>
+        <a class="nav-link" href="about.html">About us</a>
+    </div>
 </nav>
 
 <!-- Add the main content area -->
@@ -29,6 +32,9 @@
 <footer>
     &copy; 2023 Sports Equipment. All rights reserved.
 </footer>
+
+<!-- Add the JavaScript -->
+<script src="nav-bar.js"></script>
 <script src="app-product.js"></script>
 </body>
 </html>

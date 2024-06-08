@@ -1,39 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sports Equipment</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <!-- Add the header with the logo -->
 <header>
-    <img src="logo.png" alt="Company logo" />
+    <img src="logo.png" alt="Company logo" style="max-width: 100%;height: auto; flex: 1 1 auto;"/>
 </header>
 
 <!-- Add the navigation menu -->
 <nav>
-    <a  class="nav-link" href="index.html">Home</a> |
-    <a  class="nav-link" href="equipment.html">Equipment</a> |
-    <a  class="nav-link" href="about.html">About us</a>
+    <button class="burger-menu" onclick="toggleMenu()">&#9776;</button>
+    <div class="nav-links" id="navLinks">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="equipment.html">Equipment</a>
+        <a class="nav-link" href="about.html">About us</a>
+    </div>
 </nav>
 
 <!-- Add the main content area -->
 <main>
     <h1>Welcome to our sports equipment website!</h1>
+</main>
+<!-- Parallax sections and text content -->
+<div class="parallax-container">
+    <div class="parallax"></div>
+</div>
+<div class="parallax-subtitle">
     <p>
         We're excited to have you here. Our website is your one-stop shop for all your sports equipment needs. Whether you're a seasoned athlete or just starting out, we have everything you need to take your game to the next level.
     </p>
     <p>
         To learn more about our company and our mission, be sure to check out our <a href="about.html">About us</a> page. And if you're looking for specific equipment, you can browse our selection on the <a href="equipment.html">Equipment</a> page.
     </p>
+    <ul>
+        <li>Wide range of sports equipment</li>
+        <li>Top-quality brands</li>
+        <li>Competitive prices</li>
+        <li>Excellent customer service</li>
+    </ul>
+    <p>
+        Our products include:
+    </p>
+    <ol>
+        <li>Football gear</li>
+        <li>Basketball equipment</li>
+        <li>Swimming accessories</li>
+        <li>Running shoes and apparel</li>
+        <li>Yoga mats and props</li>
+        <li>Fitness and gym equipment</li>
+    </ol>
+</div>
+<div class="parallax-container">
+    <div class="parallax"></div>
+</div>
+<div class="parallax-subtitle">
     <p>
         If you have any questions or need assistance, please don't hesitate to contact us. We're here to help!
     </p>
-</main>
+    <p>
+        Our customer support team is available:
+    </p>
+    <ul>
+        <li>Monday to Friday: 9am - 6pm</li>
+        <li>Saturday: 10am - 4pm</li>
+        <li>Sunday: Closed</li>
+    </ul>
+    <p>
+        You can reach us through:
+    </p>
+    <ol>
+        <li>Phone: 123-456-7890</li>
+        <li>Email: support@sportsequipment.com</li>
+        <li>Live chat on our website</li>
+    </ol>
+</div>
+<div class="parallax-container">
+    <div class="parallax"></div>
+</div>
+<div class="parallax-subtitle">
+    <p>
+        We offer a wide range of sports equipment for all your needs. From football to basketball, from swimming to running, we have it all. Browse our extensive collection and find the perfect equipment for your sport.
+    </p>
+    <p>
+        Our team is dedicated to providing the best customer service. If you need help choosing the right equipment, don't hesitate to reach out to us. We're here to assist you in making the best choice for your athletic journey.
+    </p>
+    <p>
+        Here's what our customers say about us:
+    </p>
+    <ul>
+        <li>"Great selection and prices!" - Alex</li>
+        <li>"Excellent customer service." - Jamie</li>
+        <li>"Quick delivery and quality products." - Sam</li>
+        <li>"My go-to store for sports gear." - Taylor</li>
+    </ul>
+</div>
+
 
 <!-- Add the footer -->
 <footer>
     &copy; 2023 Sports Equipment. All rights reserved.
 </footer>
+
+<!-- Add the JavaScript -->
+<script src="nav-bar.js"></script>
 </body>
 </html>

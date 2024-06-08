@@ -12,9 +12,12 @@
 
 <!-- Add the navigation menu -->
 <nav>
-    <a  class="nav-link" href="index.html">Home</a> |
-    <a  class="nav-link" href="equipment.html">Equipment</a> |
-    <a  class="nav-link" href="about.html">About us</a>
+    <button class="burger-menu" onclick="toggleMenu()">&#9776;</button>
+    <div class="nav-links" id="navLinks">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="equipment.html">Equipment</a>
+        <a class="nav-link" href="about.html">About us</a>
+    </div>
 </nav>
 
 <main>
@@ -33,12 +36,15 @@
     </p>
     <section id="video-tutorial">
         <h2>Video about company</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/GVljFVClyws" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" style="max-width: 100%;height: auto; flex: 1 1 auto;" src="https://www.youtube.com/embed/GVljFVClyws" frameborder="0" allowfullscreen></iframe>
     </section>
 </main>
 <!-- Add the footer -->
 <footer>
     &copy; 2023 Sports Equipment. All rights reserved.
 </footer>
+
+<!-- Add the JavaScript -->
+<script src="nav-bar.js"></script>
 </body>
 </html>
