@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const productImage = document.createElement('img');
     productImage.src = imageSrc;
     productImage.alt = `Product ${productId}`;
+    productImage.style="max-width: 100%;height: auto; flex: 1 1 auto;";
 
     const productName = document.createElement('h2');
     productName.textContent = itemName;

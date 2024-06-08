@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sports Equipment - Equipment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Equipment</title>
     <link rel="stylesheet" href="style.css">
+
+    <meta name="description" content="Buy high-quality sports equipment for various sports activities. We offer a wide range of gear for athletes of all levels.">
+    <meta name="keywords" content="sports equipment, sports gear, athletic gear, sports accessories">
+    <meta name="author" content="Sports Equipment">
+    <style>
+        #searchContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            max-width: 100%;
+        }
+        #searchContainer h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        #searchInput {
+            padding: 8px;
+            margin-left: 10px;
+            font-size: 16px;
+            width: 300px; /* фиксированная ширина для поискового поля */
+        }
+
+        @media (max-width: 600px) {
+            #searchContainer {
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+                margin-bottom: 10px;
+            }
+            #searchContainer h1 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            #searchInput {
+                width: 80%; /* адаптивная ширина для мобильных устройств */
+                margin-left: 0;
+            }
+        }
+    </style>
 </head>
 <body>
 <!-- Add the header with the logo -->
 <header>
-    <img src="logo.png" alt="Company logo" />
+    <img src="logo.png" alt="Company logo" style="max-width: 100%;height: auto; flex: 1 1 auto;"/>
 </header>
 
 <!-- Add the navigation menu -->
@@ -22,10 +63,11 @@
 
 <!-- Add the main content area -->
 <main>
-    <h1 style="margin-left: 20px">Equipment</h1>
-    <label for="searchInput"></label>
-    <input type="text" id="searchInput" placeholder="Search items by name..." />
-
+    <div id="searchContainer" style="display:flex; align-items:center; height:50px; max-width: 100%;">
+        <h1>Equipment</h1>
+        <label for="searchInput"></label>
+        <input type="text" id="searchInput" placeholder="Search items by name..." />
+    </div>
     <div class="equipment-container">
         <div class="equipment-item" data-image-src="eq.png">
             <h2>Dumbbells</h2>
