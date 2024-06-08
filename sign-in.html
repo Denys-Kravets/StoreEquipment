@@ -73,10 +73,14 @@
 <body>
 <div class="container">
     <form id="sign-in">
-        <img src="logo.png" width="381" height="232" style="max-width: 100%;height: auto; flex: 1 1 auto;">
+        <img src="logo.png" width="381" height="232" style="max-width: 100%;height: auto; flex: 1 1 auto;" alt="Logo">
         <h2>Sign In</h2>
-        <input type="text" placeholder="Username" required>
-        <input type="password" placeholder="Password" required>
+        <label>
+            <input type="text" placeholder="Username" required>
+        </label>
+        <label>
+            <input type="password" placeholder="Password" required>
+        </label>
         <button style="background-color: #3341e7; margin-bottom: 20px" type="submit">Sign In</button>
         <button id="redirect-sign-up">Sign Up</button>
     </form>
